@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#030711">
+
+    <meta name="description"
+          content="Explore planets, galaxies and the mysteries of the universe.">
+
+    <title>COSMOS EXPLORER | Beyond the Unknown</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Animated space background -->
+    <div class="space-background">
+        <div class="stars stars-small"></div>
+        <div class="stars stars-medium"></div>
+        <div class="stars stars-large"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            COSMOS<span>EXPLORER</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+
+            <a href="#universe"
+               data-en="Universe"
+               data-ar="الكون">Universe</a>
+
+            <a href="#missions"
+               data-en="Missions"
+               data-ar="المهمات">Missions</a>
+        </nav>
+
+        <button
+            id="language-toggle"
+            class="language-button"
+            type="button"
+            aria-label="Change language">
+            AR
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-glow"></div>
+
+            <div class="hero-content">
+
+                <div class="status-label">
+                    <span class="status-dot"></span>
+
+                    <span
+                        data-en="THE UNIVERSE IS WAITING"
+                        data-ar="الكون في انتظارك">
+                        THE UNIVERSE IS WAITING
+                    </span>
+                </div>
+
+                <p class="eyebrow"
+                   data-en="YOUR JOURNEY STARTS HERE"
+                   data-ar="رحلتك تبدأ من هنا">
+                    YOUR JOURNEY STARTS HERE
+                </p>
+
+                <h1 data-en="EXPLORE THE"
+                    data-ar="استكشف">
+                    EXPLORE THE
+                </h1>
+
+                <div class="hero-title-gradient"
+                     data-en="UNIVERSE"
+                     data-ar="الكون">
+                    UNIVERSE
+                </div>
+
+                <p class="hero-description"
+                   data-en="Discover distant worlds, mysterious galaxies, and the wonders beyond our imagination."
+                   data-ar="اكتشف عوالم بعيدة ومجرات غامضة وعجائب تتجاوز حدود خيالنا.">
+                    Discover distant worlds, mysterious galaxies,
+                    and the wonders beyond our imagination.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#universe" class="primary-button">
+                        <span
+                            data-en="BEGIN YOUR JOURNEY"
+                            data-ar="ابدأ رحلتك">
+                            BEGIN YOUR JOURNEY
+                        </span>
+
+                        <span class="button-arrow">→</span>
+                    </a>
+
+                    <a href="#missions" class="secondary-button"
+                       data-en="DISCOVER MORE"
+                       data-ar="اكتشف المزيد">
+                        DISCOVER MORE
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <span class="stat-number">08</span>
+                        <span class="stat-label"
+                              data-en="PLANETS"
+                              data-ar="كواكب">
+                            PLANETS
+                        </span>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label"
+                              data-en="POSSIBILITIES"
+                              data-ar="احتمالات">
+                            POSSIBILITIES
+                        </span>
+                    </div>
+
+                    <div class="stat-divider"></div>
+
+                    <div class="stat">
+                        <span class="stat-number">01</span>
+                        <span class="stat-label"
+                              data-en="UNIVERSE"
+                              data-ar="كون">
+                            UNIVERSE
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Main planet -->
+            <div class="planet-scene" aria-hidden="true">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="planet-halo"></div>
+
+                <div class="main-planet">
+
+                    <div class="planet-surface"></div>
+
+                    <div class="planet-shadow"></div>
+
+                </div>
+
+                <div class="moon-orbit">
+                    <div class="moon"></div>
+                </div>
+
+                <div class="planet-label">
+                    <span class="label-line"></span>
+
+                    <div>
+                        <span class="label-small">PLANET</span>
+                        <span class="label-name">EARTH-01</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="#universe" class="scroll-indicator">
+
+                <span
+                    data-en="SCROLL TO EXPLORE"
+                    data-ar="مرر لاكتشاف المزيد">
+                    SCROLL TO EXPLORE
+                </span>
+
+                <span class="scroll-line"></span>
+
+            </a>
+
+        </section>
+
+
+        <!-- Universe Section -->
+        <!-- Solar System Explorer -->
+
+<section class="solar-system-section" id="solar-system">
+
+    <div class="solar-heading">
+
+        <p class="eyebrow"
+           data-en="OUR COSMIC NEIGHBORHOOD"
+           data-ar="جوارنا الكوني">
+            OUR COSMIC NEIGHBORHOOD
+        </p>
+
+        <h2 data-en="Explore the Solar System"
+            data-ar="استكشف المجموعة الشمسية">
+            Explore the Solar System
+        </h2>
+
+        <p data-en="Choose a planet and discover its secrets."
+           data-ar="اختر كوكبًا واكتشف أسراره.">
+            Choose a planet and discover its secrets.
+        </p>
+
+    </div>
+
+
+    <div class="solar-toolbar">
+
+        <span data-en="ORBIT SPEED"
+              data-ar="سرعة المدار">
+            ORBIT SPEED
+        </span>
+
+        <button id="speed-slow" type="button">0.5×</button>
+
+        <button id="speed-normal" class="active" type="button">1×</button>
+
+        <button id="speed-fast" type="button">2×</button>
+
+    </div>
+
+
+    <div class="solar-layout">
+
+        <div class="solar-stage" id="solar-stage">
+
+            <div class="sun">
+                <span class="sun-core"></span>
+            </div>
+
+            <div class="solar-orbit orbit-mercury">
+                <button class="solar-planet mercury"
+                        data-planet="mercury"
+                        aria-label="Mercury"></button>
+            </div>
+
+            <div class="solar-orbit orbit-venus">
+                <button class="solar-planet venus"
+                        data-planet="venus"
+                        aria-label="Venus"></button>
+            </div>
+
+            <div class="solar-orbit orbit-earth">
+                <button class="solar-planet earth"
+                        data-planet="earth"
+                        aria-label="Earth"></button>
+            </div>
+
+            <div class="solar-orbit orbit-mars">
+                <button class="solar-planet mars"
+                        data-planet="mars"
+                        aria-label="Mars"></button>
+            </div>
+
+            <div class="solar-orbit orbit-jupiter">
+                <button class="solar-planet jupiter"
+                        data-planet="jupiter"
+                        aria-label="Jupiter"></button>
+            </div>
+
+            <div class="solar-orbit orbit-saturn">
+                <button class="solar-planet saturn"
+                        data-planet="saturn"
+                        aria-label="Saturn">
+                    <span class="saturn-ring"></span>
+                </button>
+            </div>
+
+            <div class="solar-orbit orbit-uranus">
+                <button class="solar-planet uranus"
+                        data-planet="uranus"
+                        aria-label="Uranus"></button>
+            </div>
+
+            <div class="solar-orbit orbit-neptune">
+                <button class="solar-planet neptune"
+                        data-planet="neptune"
+                        aria-label="Neptune"></button>
+            </div>
+
+        </div>
+
+
+        <aside class="planet-info" aria-live="polite">
+
+            <p class="eyebrow"
+               data-en="PLANET DATABASE"
+               data-ar="قاعدة بيانات الكواكب">
+                PLANET DATABASE
+            </p>
+
+            <div class="info-planet-icon" id="info-planet-icon">
+                🌍
+            </div>
+
+            <h3 id="planet-name">Earth</h3>
+
+            <p id="planet-description">
+                Our home planet, the only known world with life.
+            </p>
+
+            <div class="planet-facts">
+
+                <div class="fact-row">
+
+                    <span data-en="Order from Sun"
+                          data-ar="الترتيب من الشمس">
+                        Order from Sun
+                    </span>
+
+                    <strong id="planet-order">3</strong>
+
+                </div>
+
+                <div class="fact-row">
+
+                    <span data-en="Diameter"
+                          data-ar="القطر">
+                        Diameter
+                    </span>
+
+                    <strong id="planet-diameter">12,742 km</strong>
+
+                </div>
+
+                <div class="fact-row">
+
+                    <span data-en="Year Length"
+                          data-ar="طول السنة">
+                        Year Length
+                    </span>
+
+                    <strong id="planet-year">365 days</strong>
+
+                </div>
+
+            </div>
+
+            <button class="next-planet-button"
+                    id="next-planet"
+                    type="button">
+
+                <span data-en="NEXT PLANET →"
+                      data-ar="الكوكب التالي ←">
+                    NEXT PLANET →
+
+                </span>
+
+            </button>
+
+        </aside>
+
+    </div>
+
+    <p class="solar-note"
+       data-en="Illustrative model — planet sizes, distances and orbital speeds are not to scale."
+       data-ar="نموذج توضيحي — أحجام الكواكب والمسافات وسرعات المدارات ليست بمقياس رسم حقيقي.">
+        Illustrative model — planet sizes, distances and orbital speeds are not to scale.
+    </p>
+
+</section>
+        <section class="content-section" id="universe">
+
+            <div class="section-heading">
+
+                <p class="eyebrow"
+                   data-en="A JOURNEY THROUGH SPACE"
+                   data-ar="رحلة عبر الفضاء">
+                    A JOURNEY THROUGH SPACE
+                </p>
+
+                <h2 data-en="A Universe of Wonders"
+                    data-ar="كون مليء بالعجائب">
+                    A Universe of Wonders
+                </h2>
+
+                <p class="section-description"
+                   data-en="Every planet has a story. Every galaxy holds a mystery."
+                   data-ar="لكل كوكب قصة، ولكل مجرة سر ينتظر اكتشافه.">
+                    Every planet has a story.
+                    Every galaxy holds a mystery.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">◉</div>
+
+                    <span class="card-number">01 / PLANETS</span>
+
+                    <h3 data-en="Explore Planets"
+                        data-ar="استكشف الكواكب">
+                        Explore Planets
+                    </h3>
+
+                    <p data-en="Travel through our solar system and discover fascinating worlds."
+                       data-ar="انطلق عبر مجموعتنا الشمسية واكتشف عوالم مذهلة.">
+                        Travel through our solar system and discover fascinating worlds.
+                    </p>
+
+                    <a href="#missions" class="card-link"
+                       data-en="START EXPLORING →"
+                       data-ar="ابدأ الاستكشاف ←">
+                        START EXPLORING →
+                    </a>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">✧</div>
+
+                    <span class="card-number">02 / GALAXIES</span>
+
+                    <h3 data-en="Distant Galaxies"
+                        data-ar="المجرات البعيدة">
+                        Distant Galaxies
+                    </h3>
+
+                    <p data-en="Discover enormous galaxies filled with stars and cosmic wonders."
+                       data-ar="اكتشف مجرات هائلة مليئة بالنجوم والعجائب الكونية.">
+                        Discover enormous galaxies filled with stars and cosmic wonders.
+                    </p>
+
+                    <a href="#missions" class="card-link"
+                       data-en="DISCOVER MORE →"
+                       data-ar="اكتشف المزيد ←">
+                        DISCOVER MORE →
+                    </a>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">⌁</div>
+
+                    <span class="card-number">03 / MISSIONS</span>
+
+                    <h3 data-en="Space Missions"
+                        data-ar="المهمات الفضائية">
+                        Space Missions
+                    </h3>
+
+                    <p data-en="Follow humanity's journey to explore the unknown."
+                       data-ar="تابع رحلة البشرية لاستكشاف المجهول.">
+                        Follow humanity's journey to explore the unknown.
+                    </p>
+
+                    <a href="#missions" class="card-link"
+                       data-en="VIEW MISSIONS →"
+                       data-ar="شاهد المهمات ←">
+                        VIEW MISSIONS →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Missions Section -->
+        <section class="missions-section" id="missions">
+
+            <div class="mission-orb" aria-hidden="true"></div>
+
+            <div class="mission-content">
+
+                <p class="eyebrow"
+                   data-en="HUMANITY BEYOND EARTH"
+                   data-ar="البشرية إلى ما وراء الأرض">
+                    HUMANITY BEYOND EARTH
+                </p>
+
+                <h2 data-en="The Next Frontier"
+                    data-ar="الحدود الجديدة للاستكشاف">
+                    The Next Frontier
+                </h2>
+
+                <p data-en="From robotic explorers on Mars to powerful space telescopes, humanity continues to push the boundaries of discovery."
+                   data-ar="من المستكشفات الآلية على المريخ إلى التلسكوبات الفضائية المتطورة، تواصل البشرية توسيع آفاق الاكتشاف.">
+                    From robotic explorers on Mars to powerful space telescopes,
+                    humanity continues to push the boundaries of discovery.
+                </p>
+
+                <a href="#home" class="primary-button">
+                    <span
+                        data-en="BACK TO THE STARS"
+                        data-ar="العودة إلى النجوم">
+                        BACK TO THE STARS
+                    </span>
+
+                    <span class="button-arrow">↑</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">
+            COSMOS<span>EXPLORER</span>
+        </a>
+
+        <p
+            data-en="EXPLORE BEYOND THE UNKNOWN"
+            data-ar="استكشف ما وراء المجهول">
+            EXPLORE BEYOND THE UNKNOWN
+        </p>
+
+        <span>© 2026 COSMOS EXPLORER</span>
+
+    </footer>
+
+</body>
+
+</html>
